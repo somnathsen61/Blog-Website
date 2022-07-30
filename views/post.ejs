@@ -1,0 +1,19 @@
+<%- include('partials/header'); -%>
+
+<div class="box border-blue">
+    <div class="row">
+        <h1> <%= foundItem.title %></h1>
+        <p> <%= foundItem.curdate %> </p>
+        <div class="post-btn-containter">
+            <a class="btn-post border-blue " href="/edit"><i class="fas fa-edit icon-size"></i></a>
+            <a class="btn-post border-blue " href="/delete"><i class="fas fa-trash icon-size"></i></a>
+        </div>
+    </div>
+</div>
+<div class="box border-blue">
+    <p> <%= foundItem.content %> </p>
+    <hr>
+    <a class="btn btn-primary" href="/">Back</a>
+</div>
+
+<%- include('partials/footer'); -%>

@@ -1,0 +1,24 @@
+<%- include('partials/header'); -%>
+
+    <div class="box border-blue">
+        <h1>Modify</h1>
+    </div>
+
+    <div class="box border-blue">
+        <form action="/update/<%= foundItem._id %>" method="post">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" name="postTitle" value="<%= foundItem.title %>" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="post">Post</label>
+                <textarea class="form-control" name="postBody" rows="8" required><%= foundItem.content %></textarea>
+            </div>
+            <!-- <input type="hidden" name="itemId" value="<%= foundItem._id %>"> -->
+            <button type="submit" class="btn btn-primary">Update</button>
+            <a class="btn btn-success" href="/" role="button">Cancel</a>
+        </form>
+    </div>
+    
+
+<%- include('partials/footer'); -%>

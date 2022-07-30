@@ -1,0 +1,105 @@
+a, a:hover, body{    
+    color:#080553;
+}
+
+h1{    
+    margin: 0 0;     
+    display: inline-block;
+}
+
+.headingName{
+    font-size: 2rem;
+}
+
+p{
+    color:black;
+}
+p.date{
+    color: #080553;
+    font-style: italic;
+}
+
+.border-blue{
+    border: 2px solid #080553;
+    border-radius: 0.7rem;
+}
+
+.title{
+    letter-spacing: 3px;
+}
+
+h1, button.btn-post, a.btn-post, a.post{
+    background-color: transparent;
+    font-weight: bold;
+}
+
+button.btn-post:hover, a.btn-post:hover, div.box-nav, div.footer, .footer p, a.nav-link{
+    background-color: #080553;
+    color:white;
+}
+
+button.btn-post, a.btn-post{    
+    padding:10px;
+    display: inline-block;
+    outline-style: none;
+}
+
+div.box, .footer{ 
+    padding: 20px 20px;
+    margin: 20px 0;
+    width: 100%;
+    display:block;
+}
+
+div.box-nav{
+    margin-bottom: 0;
+}
+.navbar{
+    margin-bottom: 0;
+}
+
+a.nav-link:hover{
+    background-color: transparent !important;
+    text-decoration: underline !important; 
+}
+a.navbar-brand:hover{
+    text-decoration: none !important; 
+}
+
+a.post{    
+    font-size:2.5rem;
+}
+
+.icon-size{
+    font-size: 18px;
+}
+div.row {
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+} 
+div.post-btn-containter{
+    position: absolute;
+    bottom: 10px;    
+    right:0;
+    text-align: right;
+} 
+div.post-btn-containter form{
+    display:inline-block;
+}
+
+.post-title{
+    font-size: 2.5rem;
+}
+
+.footer-padding {
+    padding-bottom: 10px;    
+}
+
+div.footer {
+    text-align: center;
+}
+
+.footer p {
+    margin:0;
+}

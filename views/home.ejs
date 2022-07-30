@@ -1,0 +1,30 @@
+
+<%- include('partials/header'); -%>
+
+<div class="box border-blue">
+    <h1 class="title">Home</h1>
+    <hr>
+    <p> <%= startingContent %> </p>
+    <hr>
+    <a href="/compose" class="btn-post border-blue">New post</a>
+
+</div>
+
+<% foundItem.slice().reverse().forEach(function(post){ %>
+<div class="box border-blue">
+    <div class="row">
+        <h1 class="post-title"> <a href= '/posts/<%= post._id %>' ><%= post.title %> </a>  </h1> 
+        <p class="date"> <%= post.curdate %> </p>
+        <div class="post-btn-containter">
+            <a class="btn-post border-blue" href="/edit/<%= post._id %>"><i class="fas fa-edit icon-size"></i></a>
+            <a class="btn-post border-blue" href="/delete/<%= post._id %>"><i class="fas fa-trash icon-size"></i></a>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <p> <%= post.content.substring(0,300)+" ..." %> <a href= '/posts/<%= post._id %>' >Read More</a> </p> 
+    </div>
+</div>
+<% }) %>
+
+<%- include('partials/footer'); -%>
